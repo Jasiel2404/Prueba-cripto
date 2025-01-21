@@ -4,7 +4,8 @@ on:
   schedule:
     - cron: "*/6 * * * *"  # Ejecutar cada 5 minutos
   workflow_dispatch:  # Permite ejecutar manualmente el workflow desde la pestaña "Actions"
-
+permissions:
+  contents: write
 jobs:
   sync:
     runs-on: ubuntu-latest
